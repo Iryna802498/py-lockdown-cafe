@@ -5,6 +5,8 @@ from app.cafe import Cafe
 
 
 def go_to_cafe(friends: list, cafe: Cafe) -> str:
+    if not friends:
+        return "None of your friends are going to a cafe"
     masks_to_buy = 0
     for friend in friends:
         try:
